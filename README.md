@@ -1,97 +1,53 @@
+# 📅 Smart University Timetable Management System
+
+A robust Flutter application designed to simplify university schedules. This app allows Admins to upload CSV timetables and provides tailored views for Students and Teachers.
+
+## 🚀 Key Features
+* **Smart CSV Parser:** Handles complex university timetable formats, including multi-slot parsing and junk data filtering.
+* **Dual Portal System:** Separate dashboards for Teachers (view by subjects/classes) and Students (view by section).
+* **Dynamic UI:** Responsive design that handles long strings and data anomalies without layout overflows.
+* **Real-time Filters:** Quick search and filter by Teacher, Section, or Day.
+
+## 🛠️ Tech Stack
+* **Framework:** Flutter (Dart)
+* **State Management:** Provider / setState
+* **Data Handling:** CSV Parser & Local Models
+* **UI/UX:** Custom Gradients, Glassmorphism components
+
+## 📸 Demo
+<img width="1920" height="1080" alt="Screenshot (129)" src="https://github.com/user-attachments/assets/3c0d69ba-962f-4a96-8b65-0859d0a60119" />
+
+<img width="1920" height="1080" alt="Screenshot (128)" src="https://github.com/user-attachments/assets/ffa48a15-681b-43f2-86bf-95d83b738fc9" />
+
+<img width="1920" height="1080" alt="Screenshot (130)" src="https://github.com/user-attachments/assets/661badbd-90c0-45c9-b51d-4d10d9493710" />
 
 
-# 🎓 Comsats Timetable Pro
+<img width="1920" height="1080" alt="Screenshot (131)" src="https://github.com/user-attachments/assets/361f7478-485a-4541-95c9-3e853a823542" />
+<img width="1920" height="1080" alt="Screenshot (133)" src="https://github.com/user-attachments/assets/4a04c3da-a034-4e07-96e1-99f92ace0d52" />
 
-**Comsats Timetable Pro** is a high-performance, cross-platform mobile application built with Flutter. It solves the common problem of navigating complex university schedules by transforming raw CSV data into a dynamic, user-centric interface. Designed with both students and faculty in mind, the app ensures that no class is ever missed through a sophisticated multi-stage notification system.
+<img width="1920" height="1080" alt="Screenshot (134)" src="https://github.com/user-attachments/assets/f767b201-d520-4cdc-86a9-bed1c0801db5" />
 
-## 🌟 Core Features
+<img width="1920" height="1080" alt="Screenshot (135)" src="https://github.com/user-attachments/assets/ecf59c8a-ff11-44bb-9318-3275fddab5c3" />
 
-* **Intelligent CSV Ingestion:** Features a custom, robust CSV parsing engine that extracts timetable data with high accuracy, eliminating manual entry.
-* **Automated Anomaly Detection:** Real-time data validation highlights inconsistencies (e.g., missing instructor names or irregular room numbers) during the upload phase, ensuring data integrity.
-* **Triple-Layer Notification Engine:** Implements an advanced scheduling logic that provides reminders at **30-minute, 15-minute, and 5-minute** intervals before each class.
-* **Dual-Persona Architecture:**
-* **Student View:** Filterable schedules based on specific Departments and Sections.
-* **Faculty View:** Personalized dashboards focusing exclusively on assigned teaching modules.
+<img width="1920" height="1080" alt="Screenshot (136)" src="https://github.com/user-attachments/assets/535bd08b-bbdc-4a46-9244-2e00bbf12bc9" />
 
+<img width="1920" height="1080" alt="Screenshot (137)" src="https://github.com/user-attachments/assets/428250b9-7ca9-4ad5-aa6f-ead74d24d041" />
 
-* **Offline-First Experience:** Leverages Hive NoSQL storage for ultra-fast data retrieval and full offline functionality.
-* **Modern Weekly Grid UI:** A sleek, tabbed interface organized by days of the week (Monday–Sunday) for intuitive navigation.
-
----
-
-## 🛠 Technical Stack
-
-* **Framework:** Flutter (Material 3)
-* **Local Database:** Hive (NoSQL Key-Value Store)
-* **Scheduling:** Flutter Local Notifications
-* **Timezone Handling:** Timezone & Intl packages for precise scheduling
-* **UI/UX:** Google Fonts (Poppins), Glassmorphism-inspired design, and custom theme configurations.
-
----
-
-## 📂 Project Architecture
-
-```text
-lib/
-├── models/         # Hive data models and generated TypeAdapters
-├── screens/        # UI components: Splash, Upload, Review, and Dashboard
-├── services/       # Notification logic and background scheduling
-├── utils/          # Helper functions and constants
-└── main.dart       # Application entry point and service initialization
-
-```
-
----
-
-## 🚀 Installation & Setup
-
-1. **Clone the Repository:**
-```bash
-git clone https://github.com/your-username/Comsats-Timetable-Pro.git
-
-```
-
-
-2. **Install Dependencies:**
-```bash
-flutter pub get
-
-```
-
-
-3. **Generate Local Database Adapters:**
-```bash
-flutter pub run build_runner build --delete-conflicting-outputs
-
-```
-
-
-4. **Configure App Icons:**
-```bash
-flutter pub run flutter_launcher_icons
-
-```
-
-
-5. **Build Release APK:**
-```bash
-flutter build apk --release
-
-```
+ <img width="1920" height="1080" alt="Screenshot (132)" src="https://github.com/user-attachments/assets/10981782-8d72-43b5-849e-0a3531e6b6e9" />
 
 
 
----
 
-## 📝 Data Requirements (CSV Format)
 
-The application requires a CSV file with exactly 8 columns in the following sequence:
-`day_of_week, start_time, end_time, subject_name, room_number, teacher_name, section_name, department_name`
 
----
 
-## 👨‍💻 Developed By
 
-**M. Talha**
-*Computer Science Student | 7th Semester*
-*Passionate about Business Analytics & Product Management*
+
+
+
+
+## ⚙️ How to Use
+1. Clone the repository.
+2. Run `flutter pub get`.
+3. Open the Admin portal to upload your CSV (Format: Section, Day, Time, Subject, Room, Teacher).
+4. Navigate to Teacher or Student portals to view the parsed data.
