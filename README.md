@@ -7,6 +7,8 @@ A robust Flutter application designed to simplify university schedules. This app
 * **Dual Portal System:** Separate dashboards for Teachers (view by subjects/classes) and Students (view by section).
 * **Dynamic UI:** Responsive design that handles long strings and data anomalies without layout overflows.
 * **Real-time Filters:** Quick search and filter by Teacher, Section, or Day.
+* **Smart Reminders:** Integrated local notifications to alert students/teachers 10 minutes before their next class starts.
+* **Background Tasks:** Notifications work even if the app is closed, ensuring you never miss a lecture.
 
 ## 🛠️ Tech Stack
 * **Framework:** Flutter (Dart)
